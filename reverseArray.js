@@ -1,7 +1,7 @@
 //Given a numerical array, reverse the order of values, in-place. The reversed array should have the same length, with existing elements moved to other indices so that order of elements is reversed. Working ‘in-place’ means that you cannot use a second array – move values within the array that you are given. Do not use built-in functions.
 
 function reverse(arr){
-    //Check if the array is at least two long.
+    //Check if the array is at least two indices long.
     if(arr.length<2){
         return "Error: Array too short. Please enter an array that includes at least two indices."
     }
