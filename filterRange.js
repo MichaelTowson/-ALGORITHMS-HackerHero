@@ -2,7 +2,20 @@
 
 //SOLUTION
 function filterRange(arr, min, max) {
+    //1. Define a pointer to keep track of the front value in our array.
+    var pointer = 0;
 
+    //2. Loop through the array. If a value is found that is between the min and max, copy it to the current front pointer and advance the front pointer to the next position.
+    for(let i=0;i<arr.length;i++){
+        if(arr[i] > min && arr[i] < max) {
+            arr[pointer] = arr[i];
+            pointer++;
+        }
+    }
+
+    //3. At the end of the loop, set the length of the array to the index of the pointer, deleting all the remaining ones. Then return the adjusted array.
+    arr.length = pointer;
+    return arr;
 }
 
 //TEST CASES
