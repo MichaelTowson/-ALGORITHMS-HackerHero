@@ -4,12 +4,12 @@ function parensValid(str) {
     let parenLeftCount = 0; 
     let parenRightCount = 0;
 
-    for(let i=0; i<str.length; i++) {
-        if(str[i] == "(") {
+    for(const letter of str) {
+        if(letter == "(") {
             parenLeftCount++
             continue;
         } ;
-        if(str[i] == ")") {
+        if(letter == ")") {
             parenRightCount++ ;
         }
         if(parenRightCount > parenLeftCount){
