@@ -3,15 +3,12 @@
 //multiTable(3,3) should print 1 2 3 2 4 6 3 6 9
 
 function multiTable(x,y) {
-    let newArray = [];
-
-    for(let i=1; i<=x; i++) {
-        for(let r=1; r<=y; r++) {
-            newArray.push(i*r);
+    for(let i=1; i<=y; i++) {
+        for(let r=1; r<=x; r++) {
+            console.log(i*r);
         }
     }
-
-    return newArray.toString()
+    
 }
 
 console.log(multiTable(2,2)); //Should log 1 2 2 4
